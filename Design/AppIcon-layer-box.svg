@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3D93DE"/><stop offset="1" stop-color="#123F72"/></linearGradient>
+ <linearGradient id="kraft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E7AB66"/><stop offset="1" stop-color="#B8763B"/></linearGradient>
+ <linearGradient id="flap" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0BB7B"/><stop offset="1" stop-color="#C98647"/></linearGradient>
+ <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#BFCAD6"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCEBFA"/></linearGradient>
+ <linearGradient id="handle" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A525C"/><stop offset="1" stop-color="#16191D"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+</defs>
+<!-- 箱の影 -->
+<ellipse cx="460" cy="815" rx="250" ry="26" fill="#0A2240" opacity=".45" filter="url(#shadow)"/>
+<!-- 箱の内側（奥の壁） -->
+<path d="M248 478 L282 432 L640 432 L672 478 Z" fill="#7A4A22"/>
+<!-- 書類 -->
+<g transform="rotate(-9 400 420)">
+ <rect x="300" y="270" width="230" height="290" rx="16" fill="#EEF2F6"/>
+ <rect x="335" y="320" width="140" height="16" rx="8" fill="#C3CCD6"/>
+ <rect x="335" y="355" width="110" height="16" rx="8" fill="#C3CCD6"/>
+</g>
+<g transform="rotate(7 520 410)">
+ <rect x="410" y="250" width="230" height="300" rx="16" fill="#FFFFFF"/>
+ <rect x="445" y="300" width="150" height="16" rx="8" fill="#C3CCD6"/>
+ <rect x="445" y="335" width="120" height="16" rx="8" fill="#C3CCD6"/>
+</g>
+<!-- ふたの折り返し（左）：箱の左の縁から外へ開いた板 -->
+<path d="M282 432 L248 478 L138 452 L176 398 Z" fill="url(#flap)"/>
+<path d="M282 432 L248 478" stroke="#9C6230" stroke-width="8" stroke-linecap="round"/>
+<path d="M176 398 L138 452" stroke="#F6D2A4" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+<!-- 箱の前の面 -->
+<rect x="236" y="470" width="448" height="336" rx="26" fill="url(#kraft)"/>
+<rect x="236" y="470" width="448" height="40" rx="20" fill="#F3C68E" opacity=".55"/>
+<!-- テープ -->
+<rect x="420" y="470" width="80" height="120" rx="6" fill="#F6DDB4" opacity=".9"/>
+</svg>

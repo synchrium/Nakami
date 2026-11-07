@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AUTHOR</key>
+	<string>synchrium</string>
+	<key>COMPANYNAME</key>
+	<string>synchrium</string>
+	<key>FILEHEADER</key>
+	<string>
+//  ___FILENAME___
+//  ___TARGETNAME___
+//  
+//  Created by ___AUTHOR___ on ___DATE___
+//  ___COPYRIGHT___
+//  Copyright (C) ___YEAR___  ___COMPANYNAME___
+//</string>
+</dict>
+</plist>

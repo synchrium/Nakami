@@ -1,0 +1,2246 @@
+{
+  "sourceLanguage" : "ja",
+  "strings" : {
+    "—" : {
+      "shouldTranslate" : false
+    },
+    "「/」は名前に使えません" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“/” can't be used in a name"
+          }
+        }
+      }
+    },
+    "「%@」にはパスワードが付いています" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” is password protected."
+          }
+        }
+      }
+    },
+    "「%@」を取り出します。取り出し先のフォルダを選んでください" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract “%@”. Choose a destination folder."
+          }
+        }
+      }
+    },
+    "「開く」「保存」のダイアログ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open and Save Dialogs"
+          }
+        }
+      }
+    },
+    "「隠しファイル」のチェック" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“Hidden items” checkbox"
+          }
+        }
+      }
+    },
+    "%lld / %lld 項目を選択・%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld of %2$lld selected · %3$@"
+          }
+        }
+      }
+    },
+    "%lld 個のファイル・%lld 個のフォルダ・%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%#@files@ · %#@folders@ · %3$@"
+          },
+          "substitutions" : {
+            "files" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg file"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg files"
+                    }
+                  }
+                }
+              }
+            },
+            "folders" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg folder"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg folders"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld 項目・%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%#@items@ · %2$@"
+          },
+          "substitutions" : {
+            "items" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg item"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg items"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "1 つずつ足して選ぶ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to the selection one by one"
+          }
+        }
+      }
+    },
+    "1 つだけ選んだとき" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When one item is selected"
+          }
+        }
+      }
+    },
+    "2 つが合っていません" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The two passwords don't match"
+          }
+        }
+      }
+    },
+    "7-Zip から Explorer へドラッグ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drag from 7-Zip to File Explorer"
+          }
+        }
+      }
+    },
+    "7-Zip の「OK」" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK in 7-Zip"
+          }
+        }
+      }
+    },
+    "7-Zip の「展開」" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7-Zip “Extract”"
+          }
+        }
+      }
+    },
+    "7-Zip の「追加」" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add in 7-Zip"
+          }
+        }
+      }
+    },
+    "AES-256 の zip は、相手が 7-Zip などを使えば開けます。Windows のエクスプローラーだけで開いてもらうなら ZipCrypto" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 zips can be opened with tools like 7-Zip. If the recipient will use only Windows File Explorer, choose ZipCrypto."
+          }
+        }
+      }
+    },
+    "AES-256（強い。Windows 標準の展開では開けない）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 (strong; Windows' built-in extractor can't open it)"
+          }
+        }
+      }
+    },
+    "Alt+↑" : {
+      "shouldTranslate" : false
+    },
+    "Alt+Enter" : {
+      "shouldTranslate" : false
+    },
+    "Alt+F4" : {
+      "shouldTranslate" : false
+    },
+    "Alt+Tab" : {
+      "shouldTranslate" : false
+    },
+    "Nakami" : {
+      "shouldTranslate" : false
+    },
+    "Nakami で開く種類" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File Types Nakami Opens"
+          }
+        }
+      }
+    },
+    "Backspace" : {
+      "shouldTranslate" : false
+    },
+    "Backspace（7-Zip）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backspace (7-Zip)"
+          }
+        }
+      }
+    },
+    "command" : {
+      "shouldTranslate" : false
+    },
+    "control" : {
+      "shouldTranslate" : false
+    },
+    "Ctrl+L" : {
+      "shouldTranslate" : false
+    },
+    "Ctrl+O" : {
+      "shouldTranslate" : false
+    },
+    "Ctrl+Shift+Esc" : {
+      "shouldTranslate" : false
+    },
+    "Ctrl+Shift+N" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ctrl+Shift+N"
+          }
+        }
+      }
+    },
+    "Ctrl+W" : {
+      "shouldTranslate" : false
+    },
+    "Ctrl+X → Ctrl+V" : {
+      "shouldTranslate" : false
+    },
+    "Ctrl+クリック" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ctrl+click"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "shouldTranslate" : false
+    },
+    "delete（左を消す）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "delete (deletes to the left)"
+          }
+        }
+      }
+    },
+    "Enter" : {
+      "shouldTranslate" : false
+    },
+    "Esc" : {
+      "shouldTranslate" : false
+    },
+    "Esc で窓を閉じる" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close the window with Esc"
+          }
+        }
+      }
+    },
+    "F1" : {
+      "shouldTranslate" : false
+    },
+    "F2" : {
+      "shouldTranslate" : false
+    },
+    "Finder" : {
+      "shouldTranslate" : false
+    },
+    "Finder からファイルやフォルダをドロップして組み立てる" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Build it by dropping files and folders from Finder"
+          }
+        }
+      }
+    },
+    "Finder から入れたものを、ツールバーの「作る」（⌘S）で書庫にします。フォルダを作る（⇧⌘N）こともできます" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Items dropped from Finder become an archive when you click Create (⌘S) in the toolbar. You can also make folders (⇧⌘N)."
+          }
+        }
+      }
+    },
+    "Finder へのドラッグで取り出すときは、この設定に関係なく、ドロップした場所にそのまま置きます" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When you drag items to Finder, they are always placed directly where you drop them, regardless of this setting."
+          }
+        }
+      }
+    },
+    "Finder へ取り出す（そのまま置く）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract to Finder (placed directly)"
+          }
+        }
+      }
+    },
+    "libarchive の初期化に失敗しました" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to initialize libarchive."
+          }
+        }
+      }
+    },
+    "Mac ではあまり使わない" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rarely used on a Mac"
+          }
+        }
+      }
+    },
+    "Mac と Windows 10 以降は UTF-8 で読めます。古い Windows や古いソフトに渡すなら Shift_JIS" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Macs and Windows 10 or later can read UTF-8. Choose Shift_JIS for older Windows or older software."
+          }
+        }
+      }
+    },
+    "Mac のキーボードの記号と、Windows でだいたい当たるキー" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac keyboard symbols and their rough Windows equivalents"
+          }
+        }
+      }
+    },
+    "Mac のゴミ（`.DS_Store`・`__MACOSX`・`._` で始まるもの）は、いつも入れません" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac clutter (`.DS_Store`, `__MACOSX`, and files starting with `._`) is never included"
+          }
+        }
+      }
+    },
+    "Mac のゴミ（`.DS_Store`・`__MACOSX`・`._` で始まるもの）は入れません" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac clutter (`.DS_Store`, `__MACOSX`, files starting with `._`) isn't included"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "shouldTranslate" : false
+    },
+    "option" : {
+      "shouldTranslate" : false
+    },
+    "Quick Look のように、Esc で窓を閉じます。上の設定と合わせると、Esc で Nakami を終われます" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closes the window with Esc, like Quick Look. Combined with the setting above, Esc quits Nakami."
+          }
+        }
+      }
+    },
+    "Quick Look（開かずに中を見る）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quick Look (preview without opening)"
+          }
+        }
+      }
+    },
+    "shift" : {
+      "shouldTranslate" : false
+    },
+    "Shift" : {
+      "shouldTranslate" : false
+    },
+    "Shift_JIS" : {
+      "shouldTranslate" : false
+    },
+    "Shift_JIS で表せない字は「?」になりました:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Characters that Shift_JIS can't represent were replaced with “?”:"
+          }
+        }
+      }
+    },
+    "Shift+クリック" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shift+click"
+          }
+        }
+      }
+    },
+    "Shift+右クリック →「パスのコピー」" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shift+right-click → “Copy as path”"
+          }
+        }
+      }
+    },
+    "Spotlight（アプリやファイルを名前で開く）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spotlight (open apps and files by name)"
+          }
+        }
+      }
+    },
+    "UTF-8" : {
+      "shouldTranslate" : false
+    },
+    "Win キーで検索" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search with the Windows key"
+          }
+        }
+      }
+    },
+    "Win+Shift+S" : {
+      "shouldTranslate" : false
+    },
+    "Windows では" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "On Windows"
+          }
+        }
+      }
+    },
+    "zip のとき" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For zip"
+          }
+        }
+      }
+    },
+    "ZipCrypto（弱い。Windows 標準でも開ける）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ZipCrypto (weak; Windows' built-in extractor can open it)"
+          }
+        }
+      }
+    },
+    "アーカイブ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archive"
+          }
+        }
+      }
+    },
+    "アプリ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App"
+          }
+        }
+      }
+    },
+    "アプリの切り替え" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switch apps"
+          }
+        }
+      }
+    },
+    "アプリの強制終了" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Force quit an app"
+          }
+        }
+      }
+    },
+    "アプリを終わる" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quit the app"
+          }
+        }
+      }
+    },
+    "オフのときは Mac のふつうの動き（窓を閉じてもアプリは動いたまま。Dock のアイコンですぐ開ける）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When off, Nakami follows the usual Mac behavior: closing a window leaves the app running, and you can reopen it from the Dock."
+          }
+        }
+      }
+    },
+    "オンにした種類は、Finder でダブルクリックすると Nakami で開きます。オフにするとアーカイブユーティリティ（なければほかの対応アプリ）に戻します。変えるたびに macOS が確認します。Nakami は「アプリケーション」フォルダに置いてから設定してください" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Types that are on open in Nakami when you double-click them in Finder. Turning a type off returns it to Archive Utility (or another app that can open it). macOS asks you to confirm each change. Put Nakami in the Applications folder before changing this."
+          }
+        }
+      }
+    },
+    "キー" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keys"
+          }
+        }
+      }
+    },
+    "キー操作の早見表" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keyboard Shortcuts"
+          }
+        }
+      }
+    },
+    "キャンセル" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "クリック" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Click"
+          }
+        }
+      }
+    },
+    "ここに zip をドロップするか、ツールバーの「開く」（⌘O）で選びます" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drop a zip file here, or choose one with Open (⌘O) in the toolbar."
+          }
+        }
+      }
+    },
+    "ここにファイルやフォルダをドロップ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drop Files and Folders Here"
+          }
+        }
+      }
+    },
+    "ここに取り出す" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract Here"
+          }
+        }
+      }
+    },
+    "この名前は使えません" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This name can't be used"
+          }
+        }
+      }
+    },
+    "この早見表" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This cheat sheet"
+          }
+        }
+      }
+    },
+    "この書庫はファイル名の一覧まで暗号化されているため、開けません（7z・rar のパスワードには対応していません）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This archive can’t be opened because even its list of file names is encrypted (passwords on 7z and rar are not supported)."
+          }
+        }
+      }
+    },
+    "ゴミ箱へ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move to Trash"
+          }
+        }
+      }
+    },
+    "サイズ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Size"
+          }
+        }
+      }
+    },
+    "すべてオフ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn All Off"
+          }
+        }
+      }
+    },
+    "すべてオン" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn All On"
+          }
+        }
+      }
+    },
+    "すること" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Action"
+          }
+        }
+      }
+    },
+    "そのまま置く" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Place it directly"
+          }
+        }
+      }
+    },
+    "だいたい Alt" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Roughly Alt"
+          }
+        }
+      }
+    },
+    "だいたい Ctrl" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Roughly Ctrl"
+          }
+        }
+      }
+    },
+    "デスクトップへ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to Desktop"
+          }
+        }
+      }
+    },
+    "ドラッグ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drag"
+          }
+        }
+      }
+    },
+    "パスワード" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        }
+      }
+    },
+    "パスワード OK" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password OK"
+          }
+        }
+      }
+    },
+    "パスワードが違います。もう一度入れてください" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The password is incorrect. Please try again."
+          }
+        }
+      }
+    },
+    "パスワードの方式" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encryption"
+          }
+        }
+      }
+    },
+    "パスワードを付けられるのは zip だけです" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only zip archives can have a password"
+          }
+        }
+      }
+    },
+    "パスワードを付ける（作るときに聞きます）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add a password (you'll be asked when creating)"
+          }
+        }
+      }
+    },
+    "パスワードを決める" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set a Password"
+          }
+        }
+      }
+    },
+    "パスワードを解けるのは zip だけです。7z・rar などのパスワードには対応していません（一覧は見られます）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nakami can only open password-protected zip files. Passwords on 7z, rar, and other formats are not supported (you can still see the list of files)."
+          }
+        }
+      }
+    },
+    "パスワード付き" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password protected"
+          }
+        }
+      }
+    },
+    "パスワード付きのため取り出せません" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Can't Extract Password-Protected Items"
+          }
+        }
+      }
+    },
+    "パスワード未入力（クリックで入力）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password not entered (click to enter)"
+          }
+        }
+      }
+    },
+    "パスワード非対応の形式" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passwords not supported for this format"
+          }
+        }
+      }
+    },
+    "パスをコピー" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy path"
+          }
+        }
+      }
+    },
+    "ファイル %lld 個・%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Files: %1$lld · %2$@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ファイル %1$lld 個・%2$@"
+          }
+        }
+      }
+    },
+    "ファイルを受け取れませんでした" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't receive the files"
+          }
+        }
+      }
+    },
+    "ファイル名" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File Names"
+          }
+        }
+      }
+    },
+    "ファイル名の文字コード" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File name encoding"
+          }
+        }
+      }
+    },
+    "ファイル名の文字コード。古い Windows に渡すなら Shift_JIS" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encoding of file names. Choose Shift_JIS for older Windows."
+          }
+        }
+      }
+    },
+    "ファイル名の欄にパスを打つ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type a path in the File name box"
+          }
+        }
+      }
+    },
+    "フォルダに入る・ファイルを開く（ダブルクリックでも）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open a folder or file (or double-click)"
+          }
+        }
+      }
+    },
+    "フォルダへ移動" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to folder"
+          }
+        }
+      }
+    },
+    "フォルダへ移動（パスを打つ。Tab で補完）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to folder (type a path; Tab completes)"
+          }
+        }
+      }
+    },
+    "プレビュー ウィンドウ（Alt+P）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preview pane (Alt+P)"
+          }
+        }
+      }
+    },
+    "ホームへ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to Home"
+          }
+        }
+      }
+    },
+    "ほか %lld 件（Nakami で開くと全部見られます）" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld more item (open in Nakami to see everything)"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld more items (open in Nakami to see everything)"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "もう一度" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Again"
+          }
+        }
+      }
+    },
+    "一般" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "General"
+          }
+        }
+      }
+    },
+    "上のフォルダへ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to the enclosing folder"
+          }
+        }
+      }
+    },
+    "上のフォルダへ（⌘↑）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to the enclosing folder (⌘↑)"
+          }
+        }
+      }
+    },
+    "上のフォルダへ（Windows の癖で押しても効く）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to the enclosing folder (also works, for Windows habits)"
+          }
+        }
+      }
+    },
+    "上へ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Up"
+          }
+        }
+      }
+    },
+    "今いるところにフォルダを作る（⇧⌘N）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make a folder here (⇧⌘N)"
+          }
+        }
+      }
+    },
+    "何個か選んだときと全部のときは、いつも書庫の名前のフォルダに入れます（中身が 1 つのフォルダにまとまっていればそのまま）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When several items or everything is extracted, they always go into a folder named after the archive (unless they are already in a single folder)."
+          }
+        }
+      }
+    },
+    "作ったあと Finder で見せる" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show in Finder after creating"
+          }
+        }
+      }
+    },
+    "作りました（気をつけること %lld 件）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Created (warnings: %lld)"
+          }
+        }
+      }
+    },
+    "作る" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create"
+          }
+        }
+      }
+    },
+    "作る書庫の形式" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format of the archive to create"
+          }
+        }
+      }
+    },
+    "作れませんでした" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't Create the Archive"
+          }
+        }
+      }
+    },
+    "例：「表.csv」を選んで取り出すと「取り出し先/sjis/表.csv」" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Example: extracting “表.csv” creates “destination/sjis/表.csv”"
+          }
+        }
+      }
+    },
+    "例：「表.csv」を選んで取り出すと「取り出し先/表.csv」" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Example: extracting “表.csv” creates “destination/表.csv”"
+          }
+        }
+      }
+    },
+    "全般" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "General"
+          }
+        }
+      }
+    },
+    "全部を取り出す（⌘E）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract everything (⌘E)"
+          }
+        }
+      }
+    },
+    "最後の窓を閉じたら Nakami を終わる" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quit Nakami when the last window is closed"
+          }
+        }
+      }
+    },
+    "取り出したあと Finder で見せる" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show in Finder after extracting"
+          }
+        }
+      }
+    },
+    "取り出しています…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extracting…"
+          }
+        }
+      }
+    },
+    "取り出しました（%lld 個）" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Extracted %lld Item"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Extracted %lld Items"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "取り出し先のフォルダを選んでください" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose a folder to extract to."
+          }
+        }
+      }
+    },
+    "取り出す" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract"
+          }
+        }
+      }
+    },
+    "取り出す…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract…"
+          }
+        }
+      }
+    },
+    "取り出す（⌘E）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract (⌘E)"
+          }
+        }
+      }
+    },
+    "取り出す（何も選ばなければ全部）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract (everything if nothing is selected)"
+          }
+        }
+      }
+    },
+    "取り出せなかったもの（%lld 個）:" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Could not extract (%lld item):"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Could not extract (%lld items):"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "取り出せませんでした" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could Not Extract"
+          }
+        }
+      }
+    },
+    "同じアプリの窓の切り替え" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switch windows of the same app"
+          }
+        }
+      }
+    },
+    "同じ名前があったので書かなかったもの（%lld 個）:" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Skipped because the name already exists (%lld item):"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Skipped because the name already exists (%lld items):"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "同じ名前がもうあります" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "That name is already taken"
+          }
+        }
+      }
+    },
+    "名前" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        }
+      }
+    },
+    "名前を入れてください" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter a name"
+          }
+        }
+      }
+    },
+    "名前を変える" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rename"
+          }
+        }
+      }
+    },
+    "名前を変える…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rename…"
+          }
+        }
+      }
+    },
+    "名前を変える（開くのではない！）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rename (it does not open!)"
+          }
+        }
+      }
+    },
+    "名称未設定フォルダ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "untitled folder"
+          }
+        }
+      }
+    },
+    "外す" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove"
+          }
+        }
+      }
+    },
+    "形式" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format"
+          }
+        }
+      }
+    },
+    "形式の既定" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default format"
+          }
+        }
+      }
+    },
+    "情報を見る（既定のアプリもここで変える）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get Info (also where you change the default app)"
+          }
+        }
+      }
+    },
+    "探す（例: 隠し、Alt）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search (e.g. hidden, Alt)"
+          }
+        }
+      }
+    },
+    "文字コード" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encoding"
+          }
+        }
+      }
+    },
+    "文字コードの既定" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default encoding"
+          }
+        }
+      }
+    },
+    "文字コードを選べるのは zip だけです（7z・tar はいつも Unicode）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only zip lets you choose the encoding (7z and tar always use Unicode)"
+          }
+        }
+      }
+    },
+    "新しいフォルダ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Folder"
+          }
+        }
+      }
+    },
+    "新しいフォルダを作る" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make a new folder"
+          }
+        }
+      }
+    },
+    "新しい書庫" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Archive"
+          }
+        }
+      }
+    },
+    "新しい書庫（⌘N）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Archive (⌘N)"
+          }
+        }
+      }
+    },
+    "新しい書庫の窓（⌘N）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Archive Window (⌘N)"
+          }
+        }
+      }
+    },
+    "新しい書庫を作る" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Archive"
+          }
+        }
+      }
+    },
+    "新しい書庫を作る（⌘N）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Archive (⌘N)"
+          }
+        }
+      }
+    },
+    "新しい窓（書庫を見る）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Viewer Window"
+          }
+        }
+      }
+    },
+    "既定のアプリ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default App"
+          }
+        }
+      }
+    },
+    "更新日時" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date Modified"
+          }
+        }
+      }
+    },
+    "書庫の全部（ファイル %lld 個）を取り出します。取り出し先のフォルダを選んでください" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract everything in the archive (files: %lld). Choose a destination folder."
+          }
+        }
+      }
+    },
+    "書庫の名前と保存する場所を決めてください" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose a name and location for the archive"
+          }
+        }
+      }
+    },
+    "書庫の名前のフォルダに入れる" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Put it in a folder named after the archive"
+          }
+        }
+      }
+    },
+    "書庫を作っています…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creating Archive…"
+          }
+        }
+      }
+    },
+    "書庫を作る" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create the archive"
+          }
+        }
+      }
+    },
+    "書庫を作る（⌘S）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create the archive (⌘S)"
+          }
+        }
+      }
+    },
+    "書庫を探したり、取り出したファイルを見たりするとき" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For finding archives and checking extracted files"
+          }
+        }
+      }
+    },
+    "書庫を見る窓を開く" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open a viewer window"
+          }
+        }
+      }
+    },
+    "書庫を読めませんでした" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could not read the archive."
+          }
+        }
+      }
+    },
+    "書庫を開いたときの文字コード。開いたあとはツールバーで切り替えられます" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The encoding used when an archive is opened. You can switch it in the toolbar afterward."
+          }
+        }
+      }
+    },
+    "書庫を開いてください" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open an Archive"
+          }
+        }
+      }
+    },
+    "書庫を開く" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open an archive"
+          }
+        }
+      }
+    },
+    "書庫を開く（⌘O）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open an archive (⌘O)"
+          }
+        }
+      }
+    },
+    "書庫を開く人に伝えるパスワードです。忘れると取り出せません" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share this password with whoever opens the archive. If you forget it, the contents can't be extracted."
+          }
+        }
+      }
+    },
+    "移動（Finder に ⌘X は無い）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move (Finder has no ⌘X)"
+          }
+        }
+      }
+    },
+    "空のフォルダ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empty Folder"
+          }
+        }
+      }
+    },
+    "窓を閉じる（アプリは終わらない）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close the window (the app keeps running)"
+          }
+        }
+      }
+    },
+    "窓を閉じる（設定でオンにしたとき）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close the window (when turned on in Settings)"
+          }
+        }
+      }
+    },
+    "範囲で選ぶ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select a range"
+          }
+        }
+      }
+    },
+    "範囲を選んでスクリーンショット" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screenshot of a selected area"
+          }
+        }
+      }
+    },
+    "自動" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto"
+          }
+        }
+      }
+    },
+    "記号の読み方" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading the Symbols"
+          }
+        }
+      }
+    },
+    "読めないファイルがあります: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A file couldn't be read: %@"
+          }
+        }
+      }
+    },
+    "選んだ %lld 項目（「%@」ほか）を取り出します。取り出し先のフォルダを選んでください" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract the selected items (%1$lld, including “%2$@”). Choose a destination folder."
+          }
+        }
+      }
+    },
+    "選んだファイルを Quick Look で見る" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preview the selected files with Quick Look"
+          }
+        }
+      }
+    },
+    "選んだものを取り出す（⌘E）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extract the selection (⌘E)"
+          }
+        }
+      }
+    },
+    "選んだものを外す（元のファイルは消えない）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove the selection (original files aren't deleted)"
+          }
+        }
+      }
+    },
+    "選んだものを書庫に入れない（⌘⌫。元のファイルは消えません）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leave the selection out of the archive (⌘⌫; original files aren't deleted)"
+          }
+        }
+      }
+    },
+    "選択を解除" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deselect"
+          }
+        }
+      }
+    },
+    "選択を解除（⌘E が全部を取り出すようになる）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deselect (⌘E then extracts everything)"
+          }
+        }
+      }
+    },
+    "選択を解除して、⌘E で全部を取り出せるようにする（⌥⌘A）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deselect so that ⌘E extracts everything (⌥⌘A)"
+          }
+        }
+      }
+    },
+    "開く" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open"
+          }
+        }
+      }
+    },
+    "開けませんでした" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could Not Open"
+          }
+        }
+      }
+    },
+    "隠しファイルを出す" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show hidden files"
+          }
+        }
+      }
+    },
+    "隠しファイルを出す・隠す" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show or hide hidden files"
+          }
+        }
+      }
+    },
+    "ファイルを足す・外す・名前を変える（新しい書庫の窓で開きます）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add, remove, or rename files (opens in a new archive window)"
+          }
+        }
+      }
+    },
+    "保存" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        }
+      }
+    },
+    "保存しています…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saving…"
+          }
+        }
+      }
+    },
+    "保存しました" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved"
+          }
+        }
+      }
+    },
+    "保存しました（元の書庫はゴミ箱に入れました）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved (the original archive was moved to the Trash)"
+          }
+        }
+      }
+    },
+    "保存できませんでした" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t Save"
+          }
+        }
+      }
+    },
+    "保存できませんでした（元の書庫は戻しました）: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t save (the original archive was restored): %@"
+          }
+        }
+      }
+    },
+    "元の書庫に上書きする（⌘S。最初の保存のとき、元の書庫はゴミ箱に入ります）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overwrite the original archive (⌘S). On the first save, the original is moved to the Trash"
+          }
+        }
+      }
+    },
+    "元の書庫をゴミ箱に入れられませんでした: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t move the original archive to the Trash: %@"
+          }
+        }
+      }
+    },
+    "別の名前で保存する（⇧⌘S。元の書庫はそのまま）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save with a different name (⇧⌘S). The original archive is left as is"
+          }
+        }
+      }
+    },
+    "別名で保存" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save As"
+          }
+        }
+      }
+    },
+    "書庫の中身を全部は取り出せませんでした。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not all of the archive’s contents could be extracted."
+          }
+        }
+      }
+    },
+    "編集" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
+          }
+        }
+      }
+    },
+    "編集できません" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Can’t Edit"
+          }
+        }
+      }
+    },
+    "編集できるのは zip・7z・tar.gz・tar.xz です" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only zip, 7z, tar.gz, and tar.xz archives can be edited"
+          }
+        }
+      }
+    },
+    "編集では元の書庫と同じ形式で保存します" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edited archives are saved in their original format"
+          }
+        }
+      }
+    },
+    "編集：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editing: %@"
+          }
+        }
+      }
+    },
+    "「%@」は書庫ではありません。新しい書庫を作るときは ⌘N の窓に入れてください" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” isn’t an archive. To make a new archive, add it in the ⌘N window."
+          }
+        }
+      }
+    },
+    "Nakami について" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About Nakami"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

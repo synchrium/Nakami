@@ -1,0 +1,11 @@
+# ビルドの出力（Visual Studio の bin/ obj/ に当たる）
+DerivedData/
+build/
+
+# ユーザーごとの Xcode の状態（開いているタブ・ブレークポイントなど。.suo に当たる）
+xcuserdata/
+*.xcuserstate
+
+# macOS
+.DS_Store
+dist/

@@ -1,0 +1,3 @@
+/* Finder の右クリック →「サービス」に出す項目の名前（Nakami-Info.plist の NSServices の元の名前は英語）。日本語の Mac ではこちらを出す。
+   元の名前を日本語にしていたときは、訳が元と同じになって ja が登録されず、日本語の Mac でも英語が出ていた */
+"Compress with Nakami" = "Nakami で圧縮";

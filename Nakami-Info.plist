@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	Nakami で開ける種類（Windows のレジストリの関連付けに当たるが、アプリ自身が持っている）。
+	ほかの項目は Xcode が Build Settings から作るので、ここには書かない。
+	Role は Viewer（中を見るだけ。保存はしない）、Rank は Alternate（勝手に既定にならない）
+	-->
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Archive</string>
+			<!--
+			書類アイコンは付けない。macOS 27 の Finder は種類の宣言（UTI）の持ち主のアイコンを使い、
+			既定のアプリの CFBundleTypeIconFile・CFBundleTypeIconSystemGenerated は効かなかった（2026-11-07 に確かめた）
+			-->
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.zip-archive</string>
+				<string>org.7-zip.7-zip-archive</string>
+				<string>com.rarlab.rar-archive</string>
+				<string>public.tar-archive</string>
+				<string>org.gnu.gnu-zip-archive</string>
+				<string>org.gnu.gnu-zip-tar-archive</string>
+				<string>public.bzip2-archive</string>
+				<string>public.tar-bzip2-archive</string>
+				<string>org.tukaani.xz-archive</string>
+				<string>org.tukaani.tar-xz-archive</string>
+				<string>cx.c3.lha-archive</string>
+				<string>com.microsoft.cab</string>
+				<string>public.cpio-archive</string>
+				<string>com.apple.xar-archive</string>
+				<string>public.z-archive</string>
+			</array>
+		</dict>
+	</array>
+	<!--
+	macOS 本体が知らない種類を教える（import ＝ 持ち主は別だが、こういう種類があると宣言する）。
+	rar と lzh は macOS が宣言していないので、ほかのアプリが入っていない Mac では拡張子から種類が決まらず、Nakami で開けない。
+	Windows でいえば HKCR\.rar の Content Type などを書いておくことに当たる
+	-->
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.rarlab.rar-archive</string>
+			<key>UTTypeDescription</key>
+			<string>RAR archive</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+				<string>public.archive</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>rar</string>
+				</array>
+				<key>public.mime-type</key>
+				<array>
+					<string>application/vnd.rar</string>
+					<string>application/x-rar-compressed</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>cx.c3.lha-archive</string>
+			<key>UTTypeDescription</key>
+			<string>LHA archive</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+				<string>public.archive</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>lzh</string>
+					<string>lha</string>
+				</array>
+				<key>public.mime-type</key>
+				<array>
+					<string>application/x-lzh-compressed</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<!--
+	Finder の右クリック →「サービス」に出す項目。選んだファイルを受け取り、新しい書庫の窓を開く
+	（NSMessage は NakamiApp.swift の ComposeService のメソッド名。NSRequiredContext を空で書くと、最初から有効になる）
+	名前の元は英語にして、日本語は ja.lproj/ServicesMenu.strings の訳にする。元を日本語にすると、訳が元と同じになって
+	ja が登録されず、日本語の Mac でも en の英語が出た
+	-->
+	<key>NSServices</key>
+	<array>
+		<dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>Compress with Nakami</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>composeFiles</string>
+			<key>NSPortName</key>
+			<string>Nakami</string>
+			<key>NSSendFileTypes</key>
+			<array>
+				<string>public.item</string>
+			</array>
+			<key>NSRequiredContext</key>
+			<dict/>
+		</dict>
+	</array>
+</dict>
+</plist>

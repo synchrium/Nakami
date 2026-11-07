@@ -1,0 +1,9 @@
+// libarchive を Swift から `import CArchive` で使うための定義。
+// ヘッダーは Homebrew の libarchive 3.8.10 からコピーしたもの（SDK には無いため）。
+// 本体は macOS に入っている /usr/lib/libarchive.2.dylib を使う（SDK の libarchive.tbd にリンク）。
+module CArchive [system] {
+    header "archive.h"
+    header "archive_entry.h"
+    link "archive"
+    export *
+}

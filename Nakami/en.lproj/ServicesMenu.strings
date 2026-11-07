@@ -1,0 +1,2 @@
+/* Finder の右クリック →「サービス」に出す項目の名前（Nakami-Info.plist の NSServices の元の名前）。英語の Mac ではこちらを出す */
+"Compress with Nakami" = "Compress with Nakami";

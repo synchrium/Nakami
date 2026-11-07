@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3D93DE"/><stop offset="1" stop-color="#123F72"/></linearGradient>
+ <linearGradient id="kraft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E7AB66"/><stop offset="1" stop-color="#B8763B"/></linearGradient>
+ <linearGradient id="flap" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0BB7B"/><stop offset="1" stop-color="#C98647"/></linearGradient>
+ <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#BFCAD6"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCEBFA"/></linearGradient>
+ <linearGradient id="handle" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A525C"/><stop offset="1" stop-color="#16191D"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+</defs>
+<!-- 虫眼鏡の影 -->
+<circle cx="706" cy="548" r="165" fill="#0A2240" opacity=".45" filter="url(#shadow)"/>
+<!-- 柄 -->
+<line x1="812" y1="648" x2="884" y2="728" stroke="url(#handle)" stroke-width="62" stroke-linecap="round"/>
+<line x1="800" y1="634" x2="822" y2="658" stroke="#8D99A6" stroke-width="70" stroke-linecap="round"/>
+<!-- レンズ -->
+<circle cx="690" cy="525" r="150" fill="url(#glass)"/>
+<!-- レンズの中の一覧 -->
+<rect x="598" y="452" width="34" height="34" rx="8" fill="#E7AB66"/><rect x="646" y="458" width="140" height="22" rx="11" fill="#2F7FCB"/>
+<rect x="598" y="508" width="34" height="34" rx="8" fill="#9CC4EA"/><rect x="646" y="514" width="110" height="22" rx="11" fill="#8DB8E2"/>
+<rect x="598" y="564" width="34" height="34" rx="8" fill="#9CC4EA"/><rect x="646" y="570" width="125" height="22" rx="11" fill="#8DB8E2"/>
+<!-- ガラスの光 -->
+<path d="M590 470 A118 118 0 0 1 690 403" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" opacity=".9"/>
+<!-- 枠 -->
+<circle cx="690" cy="525" r="150" fill="none" stroke="url(#ring)" stroke-width="40"/>
+</svg>
