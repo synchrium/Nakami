@@ -8,6 +8,8 @@ Nakami is a free archive manager for the Mac, in the spirit of the 7-Zip File Ma
 When you double-click a zip file on a Mac, Archive Utility extracts everything right away.
 Nakami opens it as a list instead, so you can browse the folders, preview files, and take out only what you need.
 
+<p align="center"><img src="docs/images/main-en.png" width="760" alt="A zip file opened in Nakami, showing its folders and files as a list"></p>
+
 *Nakami* (中身) is Japanese for "contents".
 
 ## Features
