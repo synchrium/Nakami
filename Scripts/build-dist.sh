@@ -63,17 +63,29 @@ if LC_ALL=C /usr/bin/grep -rlaF "${args[@]}" "$DIST/Nakami.app"; then
 fi
 echo "個人の情報: なし"
 
-# サンドボックスの権限が入っていること（署名の設定を変えると、Xcode が作る権限ごと抜けることがあった）
-for x in "$DIST/Nakami.app" "$DIST/Nakami.app/Contents/PlugIns/NakamiQuickLook.appex"; do
-    if ! codesign -d --entitlements - --xml "$x" 2>/dev/null | grep -q "com.apple.security.app-sandbox"; then
-        echo "サンドボックスの権限がありません: $x"
-        exit 1
-    fi
-done
-echo "サンドボックスの権限: OK"
+# サンドボックスの権限：Quick Look の拡張には必ず要る（無いと macOS が読み込まない。
+# 署名の設定を変えると、Xcode が作る権限ごと抜けることがあった）。
+# アプリ本体はサンドボックスの外で動かす（中だと、取り出したアプリに「サンドボックスのアプリが作った」印が付き、開けなくなる）
+QL="$DIST/Nakami.app/Contents/PlugIns/NakamiQuickLook.appex"
+if ! codesign -d --entitlements - --xml "$QL" 2>/dev/null | grep -q "com.apple.security.app-sandbox"; then
+    echo "Quick Look の拡張にサンドボックスの権限がありません"
+    exit 1
+fi
+if codesign -d --entitlements - --xml "$DIST/Nakami.app" 2>/dev/null | grep -q "com.apple.security.app-sandbox"; then
+    echo "アプリ本体がサンドボックスの中になっています"
+    exit 1
+fi
+echo "サンドボックス: 本体は外・Quick Look は中（OK）"
 
-# 配る zip（Finder の「圧縮」と同じ形。ditto は .app の中のリンクや属性を保つ）
+# 配る zip。ditto は .app の中のシンボリックリンクを保つ。
+# --norsrc --noextattr --noacl：拡張属性などを入れない（入れると「._Contents」のような ._ で始まる
+# ファイルとして zip に入り、アーカイブユーティリティ以外（Nakami や Windows）ではそのまま見えてしまう。
+# 署名は拡張属性ではなく _CodeSignature などのファイルにあるので、外しても困らない）
 VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "$DIST/Nakami.app/Contents/Info.plist")
-ditto -c -k --keepParent "$DIST/Nakami.app" "$DIST/Nakami-$VERSION.zip"
+ditto -c -k --norsrc --noextattr --noacl --keepParent "$DIST/Nakami.app" "$DIST/Nakami-$VERSION.zip"
+if zipinfo -1 "$DIST/Nakami-$VERSION.zip" | grep -qE '(^|/)\._'; then
+    echo "zip に ._ で始まるファイルが入っています"
+    exit 1
+fi
 echo "--- できたもの"
 ls -l "$DIST"

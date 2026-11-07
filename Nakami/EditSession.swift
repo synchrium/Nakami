@@ -65,7 +65,7 @@ final class EditSession {
 
     /// 取り出す一時フォルダの親。アプリの起動時に空にする
     nonisolated static var root: URL {
-        FileManager.default.temporaryDirectory.appending(path: "Edit", directoryHint: .isDirectory)
+        AppTemp.root.appending(path: "Edit", directoryHint: .isDirectory)
     }
 
     nonisolated static func newFolder() -> URL {

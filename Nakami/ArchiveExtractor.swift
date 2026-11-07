@@ -44,6 +44,10 @@ nonisolated enum ArchiveExtractor {
             | ARCHIVE_EXTRACT_SECURE_NODOTDOT // 「..」を含むパスには書かない
         )
 
+        // 書庫に付いている「ネットから来た」印（quarantine）。取り出したものにも同じ印を付ける
+        let quarantine = Quarantine.read(url)
+        var created: [URL] = []
+
         var result = ExtractResult()
         var entry: OpaquePointer?
         var index = 0
@@ -99,8 +103,47 @@ nonisolated enum ArchiveExtractor {
                 result.written += 1
             }
             archive_write_finish_entry(writer)
+            created.append(target)
+        }
+        // フォルダの日付などは最後にまとめて直されるので、閉じてから印を付ける
+        archive_write_close(writer)
+        if let quarantine {
+            Quarantine.apply(quarantine, to: created, under: destination)
         }
         return result
+    }
+
+    /// 「ネットから来た」印（拡張属性 com.apple.quarantine。Windows の Zone.Identifier（Mark of the Web）に当たる）。
+    /// アーカイブユーティリティと同じく、書庫に印があれば、取り出したもの全部に同じ印を付ける。
+    /// こうすると、取り出したアプリを初めて開くときに macOS の確認（Gatekeeper）が働く
+    enum Quarantine {
+        private static let name = "com.apple.quarantine"
+
+        static func read(_ url: URL) -> [UInt8]? {
+            let size = getxattr(url.path, name, nil, 0, 0, 0)
+            guard size > 0 else { return nil }
+            var value = [UInt8](repeating: 0, count: size)
+            guard getxattr(url.path, name, &value, size, 0, 0) == size else { return nil }
+            return value
+        }
+
+        /// created と、その親のフォルダのうち root より下のもの（書庫にフォルダの項目が無くても作られたもの）に付ける。
+        /// root そのもの（ユーザーが選んだ取り出し先）には付けない
+        static func apply(_ value: [UInt8], to created: [URL], under root: URL) {
+            let rootPath = root.path.hasSuffix("/") ? root.path : root.path + "/"
+            var paths = Set<String>()
+            for url in created {
+                var path = url.standardizedFileURL.path
+                while path.hasPrefix(rootPath) && path.count > rootPath.count {
+                    guard paths.insert(path).inserted else { break }
+                    path = (path as NSString).deletingLastPathComponent
+                }
+            }
+            for path in paths {
+                // XATTR_NOFOLLOW：シンボリックリンクはリンクそのものに付ける（指す先には付けない）
+                _ = setxattr(path, name, value, value.count, 0, XATTR_NOFOLLOW)
+            }
+        }
     }
 
     /// リンクを解いた本当のパス。URL の resolvingSymlinksInPath は「/private/tmp」の「/private」を

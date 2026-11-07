@@ -50,7 +50,7 @@ nonisolated struct ComposeDragItem: Transferable {
 
     /// コピーを作る場所の親。アプリの起動時に空にする
     static var root: URL {
-        FileManager.default.temporaryDirectory.appending(path: "ComposeDrag", directoryHint: .isDirectory)
+        AppTemp.root.appending(path: "ComposeDrag", directoryHint: .isDirectory)
     }
 
     static var transferRepresentation: some TransferRepresentation {
@@ -63,7 +63,7 @@ nonisolated struct ComposeDragItem: Transferable {
             try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
             let url = folder.appending(path: item.tree.name)
             try item.tree.copy(to: url)
-            return SentTransferredFile(url)
+            return SentTransferredFile(url, allowAccessingOriginalFile: true)
         }
     }
 

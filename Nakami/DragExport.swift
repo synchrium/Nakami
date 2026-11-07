@@ -11,6 +11,14 @@ import CoreTransferable
 import Foundation
 import UniformTypeIdentifiers
 
+/// Nakami の一時フォルダの親（/var/folders/…/T/io.github.synchrium.Nakami）。
+/// サンドボックスの外では temporaryDirectory がユーザーの全アプリで共通なので（Windows の %TEMP% と同じ）、
+/// 起動時に中を消しても、ほかのアプリのものを消さないよう、Nakami 専用のフォルダを挟む
+nonisolated enum AppTemp {
+    static let root = FileManager.default.temporaryDirectory
+        .appending(path: Bundle.main.bundleIdentifier ?? "io.github.synchrium.Nakami", directoryHint: .isDirectory)
+}
+
 /// 一覧から Finder へのドラッグで渡すもの（1 行分）。
 /// ドラッグを始めた時点では何も書き出さず、ドロップされてから一時フォルダに取り出して Finder に渡す
 /// （Windows の仮想ファイルのドラッグ、CFSTR_FILEDESCRIPTOR と CFSTR_FILECONTENTS に当たる）。
@@ -23,14 +31,14 @@ nonisolated struct DragItem: Transferable, Sendable {
     let name: String
     var passphrase: String?
 
-    /// ドラッグ用の一時フォルダ（サンドボックスの中の tmp。macOS がそのうち片付ける）
-    static let root = FileManager.default.temporaryDirectory.appending(path: "Drag", directoryHint: .isDirectory)
+    /// ドラッグ用の一時フォルダ（macOS がそのうち片付ける）
+    static let root = AppTemp.root.appending(path: "Drag", directoryHint: .isDirectory)
 
     /// Transferable：「この型はこういう形で渡せる」という宣言（.NET の IDataObject の形式の一覧に近い）。
     /// ここではファイルとして渡す。中の処理はドロップされてから呼ばれる
     static var transferRepresentation: some TransferRepresentation {
         FileRepresentation(exportedContentType: .item) { item in
-            SentTransferredFile(try item.export())
+            SentTransferredFile(try item.export(), allowAccessingOriginalFile: true)
         }
         .suggestedFileName { $0.name }
     }
