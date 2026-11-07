@@ -1,0 +1,2 @@
+# GitHub の言語の集計から、借りてきた libarchive のヘッダーを外す（入れると C が 3 割以上に見える）
+CArchive/** linguist-vendored
