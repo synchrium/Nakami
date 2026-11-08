@@ -130,7 +130,10 @@ nonisolated enum ArchiveExtractor {
         /// created と、その親のフォルダのうち root より下のもの（書庫にフォルダの項目が無くても作られたもの）に付ける。
         /// root そのもの（ユーザーが選んだ取り出し先）には付けない
         static func apply(_ value: [UInt8], to created: [URL], under root: URL) {
-            let rootPath = root.path.hasSuffix("/") ? root.path : root.path + "/"
+            // 両側を同じように整えてから比べる。standardizedFileURL は「/private/var/…」の「/private」を外すので、
+            // 片側だけ整えると、一時フォルダ（Finder へのドラッグ）に取り出したときに一致せず、印が付かなかった
+            let rootStd = root.standardizedFileURL.path
+            let rootPath = rootStd.hasSuffix("/") ? rootStd : rootStd + "/"
             var paths = Set<String>()
             for url in created {
                 var path = url.standardizedFileURL.path
